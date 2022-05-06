@@ -1,5 +1,10 @@
 #include "Console.h"
 
+bool compare(Icomputer* other, Icomputer* other1)
+{
+	return other->GetPrice() > other1->GetPrice();
+}
+
 void ShowUI() {
 	std::cout << "-------------------------------------" << std::endl;
 	std::cout << "- 1) Create a CPU                   -" << std::endl;
@@ -83,6 +88,7 @@ void Show_SSD_UI() {
 
 int Interact() {
 	ShowUI();
+	std::vector <Icomputer*> parts;
 	char choice = ' ';
 	std::cin >> choice;
 
@@ -93,6 +99,7 @@ if (choice == '1') {
 		CreateObject(choice);
 		std::cin >> model_name >> price;
 		CPU proc(model_name, price);
+		parts.push_back(&proc);
 
 		Show_CPU_UI();
 		char choice2;
@@ -122,6 +129,7 @@ if (choice == '1') {
 				Interact();
 			}
 		} while (choice != '0');
+		parts.pop_back();
 }
 
 else if (choice == '2') {
@@ -132,6 +140,7 @@ else if (choice == '2') {
 		CreateObject(choice);
 		std::cin >> model_name >> price;
 		GPU video(model_name, price);
+		parts.push_back(&video);
 
 		Show_GPU_UI();
 		char choice2;
@@ -161,7 +170,7 @@ else if (choice == '2') {
 				Interact();
 			}
 		} while (choice != '0');
-		
+		parts.pop_back();
 }
 
 else if (choice == '3') {
@@ -172,6 +181,7 @@ else if (choice == '3') {
 	CreateObject(choice);
 	std::cin >> model_name >> price;
 	RAM memory(model_name, price);
+	parts.push_back(&memory);
 
 	Show_RAM_UI();
 	char choice2;
@@ -201,7 +211,7 @@ else if (choice == '3') {
 			Interact();
 		}
 	} while (choice != '0');
-
+	parts.pop_back();
 }
 
 else if (choice == '4') {
@@ -212,6 +222,7 @@ double price;
 CreateObject(choice);
 std::cin >> model_name >> price;
 SSD disk(model_name, price);
+parts.push_back(&disk);
 
 Show_SSD_UI();
 char choice2;
@@ -241,7 +252,11 @@ do {
 		Interact();
 	}
 } while (choice != '0');
+	parts.pop_back();
+}
 
+else {
+std::cout << "Error: no such option!\n\n\n\n\n\n";
 }
 
 return 0;
