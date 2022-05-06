@@ -1,0 +1,117 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.31.31107.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00007FF639C19CC0 -il C:\\Users\\User\\AppData\\Local\\Temp\\_CL_1e7208abast -typedil -f CPU.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1931 -D_MSC_FULL_VER=193131107 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -permissive- -Fox64\\Debug\\CPU.obj -Fdx64\\Debug\\vc143.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\User\\source\\repos\\ConsoleApplication6\\ConsoleApplication6 -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\um -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\shared -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -external:I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt -external:I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\um -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\um -external:I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\shared -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\shared -external:I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt -external:I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt -I E:\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/ssd.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "eca9661079e64af01a71c25fcc890ec83b7024b0ac8ff159875895e7470108c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/ssd.h"
+          },
+          "hashes": {
+            "sha-256": "d41476536a0e6645e97d2b2d1369e5595d17ee4602cace0c6364c11aece8de66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/computerbase.h"
+          },
+          "hashes": {
+            "sha-256": "ff7d00500eab25a49faac9bb20b7b8e3d70a874beaa2c325e5ba73fd7c488a21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/icomputer.h"
+          },
+          "hashes": {
+            "sha-256": "00b2909c90b1c8f9f8d06b50cae93dec3296c288d5573fcad979c7be843cf00e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/ram.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "de5cae4de462406be323d1b1a4c6df3a19aac9eca025ff862de98582d1debb2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/ram.h"
+          },
+          "hashes": {
+            "sha-256": "0f5f27aeff1c24e470d73bfca95991d83ff54dd8312b828586a55d052e917793"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/gpu.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "fffee2f401b7285e6f4494a07f9f2393bed69eee2cd108bf4efc8002b2a5be2e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/gpu.h"
+          },
+          "hashes": {
+            "sha-256": "7b6355644bb99b60b62746a54f23cd35420166633908d9574930ea6cb6f4bfed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/cpu.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1ddace61b105df5b0b3a364207e7301b07c0673d28967846c68df41ea9645ab9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/consoleapplication6/consoleapplication6/cpu.h"
+          },
+          "hashes": {
+            "sha-256": "b73b12c695c54b3a99e04246f54731b31d3da1ec380674efd8c117c22950941e"
+          }
+        }
+      ]
+    }
+  ]
+}

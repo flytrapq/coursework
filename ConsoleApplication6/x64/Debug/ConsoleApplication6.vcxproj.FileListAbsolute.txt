@@ -1,0 +1,2 @@
+C:\Users\User\source\repos\ConsoleApplication6\x64\Debug\ConsoleApplication6.exe.lastcodeanalysissucceeded
+C:\Users\User\source\repos\ConsoleApplication6\ConsoleApplication6\x64\Debug\NativeCodeAnalysis.read.1.tlog
